@@ -1,3 +1,7 @@
 .row {
   height: 100px;
 }
+
+.clicked {
+  background-color: red;
+}
