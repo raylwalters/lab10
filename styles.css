@@ -1,6 +1,7 @@
 .row {
   height: 100px;
 }
+<<<<<<< HEAD
 
 body{background-color: #e8b614;
 }
@@ -27,3 +28,15 @@ nav{display: inline;}
 
 
 
+=======
+<<<<<<< HEAD
+.blue{
+	background-color: #3f5373;
+	
+=======
+
+.clicked {
+  background-color: red;
+>>>>>>> b90463595b956377886349e087e19d17bae2d236
+}
+>>>>>>> 32065ffdb9247d1398ae1a3f69b706d851196722
