@@ -1,6 +1,7 @@
+
 $(function(){
 	//hover
-	var $seat = $("div.col-lg-3");
+	var $seat = $("div.col-md-3");
 	$seat.hover(function(){
 		$(this).fadeTo("fast", .5);
 	},function(){
@@ -9,8 +10,11 @@ $(function(){
 
 	//click
 
-	$seat.on("click", function(){
-		$(this).css("background-color", "blue");
+
+	$seat.click(function(){
+		$(this).toggleClass("blue");
+		//$(this).unbind("onmouseover").unbind("onmouseout");
+
 	});
 
 
@@ -29,4 +33,15 @@ $(function(){
 
 
 
+<<<<<<< HEAD
 });
+=======
+
+
+
+
+
+});
+=======
+>>>>>>> b90463595b956377886349e087e19d17bae2d236
+>>>>>>> 2728a844e6e2b087cf7647218601b9f99109284b
