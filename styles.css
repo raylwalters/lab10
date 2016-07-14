@@ -1,3 +1,29 @@
 .row {
   height: 100px;
 }
+
+body{background-color: #e8b614;
+}
+header {background-color: #e83400;
+}
+nav{display: inline;}
+ 
+ #navigation-menu li{
+
+        text-align: justify;
+        padding: 10px;
+        display: inline;
+    }
+    .navigation-menu-container {
+
+        padding: 10px;
+        border: 0;
+        font-size: 12px;
+        font-weight: normal;
+        display: inline-block;
+    }
+    h1 {width: 20%;
+    	display: inline;}
+
+
+
