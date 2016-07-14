@@ -1,13 +1,7 @@
 .row {
   height: 100px;
 }
-<<<<<<< HEAD
+
 .blue{
 	background-color: #3f5373;
-	
-=======
-
-.clicked {
-  background-color: red;
->>>>>>> b90463595b956377886349e087e19d17bae2d236
-}
+	}

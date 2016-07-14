@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(function(){
 	//hover
 	var $seat = $("div.col-md-3");
@@ -39,5 +39,4 @@ $(function(){
 
 
 });
-=======
->>>>>>> b90463595b956377886349e087e19d17bae2d236
+
