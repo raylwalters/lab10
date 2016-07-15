@@ -32,9 +32,9 @@ $(".button").on('click',function() {
   $("#input").val(text);
 
 $('.button').click(function(){
-    $(this).fadeTo('fast', 0.5);
+    $('button').fadeTo('fast', 0.5);
 });
-  
+
 	$("#name").show()
 	if (text === "reserved") {
 		$("#input").val("");
