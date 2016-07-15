@@ -3,6 +3,8 @@
 
 $(function(){
 
+	$(".form-group").hide().filter("#seat").show();
+
 	//hover to fade button
 	var $seat = $("button.button");
 	$seat.hover(function(){
@@ -19,13 +21,22 @@ $(function(){
 	});
 
 
+//******Fills in form with seat number and removes when seat is unclicked******
+
 $(".button").on('click',function() {
   var text = $(this).text();
   $("#input").val(text);
+	$("#name").show()
+	if (text === "reserved") {
+		$("#input").val("");
+	}
 });
 
+//******Adds input once previous input is filled******
 
-
+$("name").keypress(function() {
+  
+});
 
 
 //******Check that fields are filled in to submit******
