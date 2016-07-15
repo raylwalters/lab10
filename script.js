@@ -22,12 +22,14 @@ $(function(){
 
 
 
-//******Fills in form with seat number and removes when seat is unclicked******
+
+
 
 var arraySeats =[];
 
 $(".button").on('click',function() {
   var text = $(this).text();
+  $("#input").val(text);
 
 //Puts seats into an array and prints them in the input
 	if (text !== "reserved"){
@@ -36,18 +38,15 @@ $(".button").on('click',function() {
 	arraySeats.forEach(function(each){
 		$("#input").val(arraySeats);
 	})
-} else {
-	arraySeats.filter(function(item){
-		return item !== this.text();
-		console.log(arraySeats);
-	});
-	console.log(arraySeats);
-	$("#input").val(arraySeats);
-}
+} 
 
 
 
-});
+
+
+})
+
+
 
 //******Adds input once previous input is filled******
 
@@ -73,16 +72,16 @@ $(".btn").click(function(){
 	if(!$name.val())
 		//&& !$email.val() && !$date.val() && !$allSeats.val()
 	{
-		console.log("nope");
+		$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 	}
 		else if(!$email.val()){
-			console.log("nope");
+			$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 		}
 			else if(!$date.val()){
-				console.log("nope");
+				$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 			}
 				else if(!$allSeats.val()){
-					console.log("nope");
+					$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 				}
 
 

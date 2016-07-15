@@ -4,17 +4,22 @@
 
 .row {
   height: 100px;
-}
+  margin-left:10%;
+  margin-bottom:5%;
 
+}
+.well{
+    margin-top:3%;
+}
 
 body{background-color: #48b5b3;
     font-family:Trirong;
 }
 header {background-color: #e83400;
-        
-
 }
-nav{display: inline;}
+nav{
+    display: inline;
+}
  
  #navigation-menu li{
 
@@ -44,15 +49,15 @@ nav{display: inline;}
         font-family: Trirong;
     }
     
-    .firstparagraph{
-float: left;
+.firstparagraph{
+        float: left;
         display: block;
         margin: 15px 2% 0 2%;
         width: 25%;
         text-align: justify;
         }
 
-    .lastparagraph{
+.lastparagraph{
 
     float: right;
         display: block;
@@ -72,24 +77,37 @@ float: left;
 
 
 .button {
-    background:url(images/black.png) no-repeat;
+    background:url(images/black2.jpg) no-repeat;
+    background-size: 100px;
     cursor:pointer;
     width: 100px;
     height: 100px;
     border: none;
     color: #e83400;
     margin: 0 auto;
+    margin-bottom:5px;
     text-align:center;
 }
 
 .container{ 
-background-color:#e83400 ;}
+    background-color:#e83400;
+    margin:2% 2%;
+}
 
 
 .button:active  /* use Dot here */
 {   
-    background:url(images/black.png) no-repeat;
+    background:url(images/black2.jpg) no-repeat;
 }
+
+#res h3{
+    margin-top:0;
+}
+
+footer{
+  margin-top:10%;
+}
+
     
 
 
