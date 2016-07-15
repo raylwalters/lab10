@@ -17,22 +17,42 @@ $(function(){
 
 	});
 
-
-
-
-
-//jquery selector that grabs content of element and stores it in a variable, variable can then be 
-//summoned into the input field
-/* target.on('click',function(){
-	code to splice 3 from seat and add to input field
-}); 
-try .val(), .splice()
-
-
-
-
-});*/
+$(".button").on('click',function() {
+  var text = $(this).text();
+  $("input").val(text);
 });
+
+
+
+$(".button").on('click', function(){
+	$(this).text("Reserved");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
 
 
 
