@@ -2,23 +2,23 @@ $(function(){
 
 	$(".form-group").hide().filter("#seat").show();
 
-	// //hover to fade button
-	// var $seat = $("button.button");
-	// $seat.mouseenter(function(){
-	// 	$(this).fadeTo("fast", 0.5);
-	// });
-	// $seat.mouseleave (function(){
-	// 	$(this).fadeTo("fast", 1);
-	// });
+	//hover to fade button
+	var $seat = $("button.button");
+	$seat.mouseenter(function(){
+		$(this).fadeTo("fast", 0.5);
+	});
+	$seat.mouseleave (function(){
+		$(this).fadeTo("fast", 1);
+	});
 
 
 
-	// //click to toggle the blue class
-	// $seat.click(function(){
-	// 	$(this).toggleClass("blue");
-	// 	//$(this).unbind("onmouseover").unbind("onmouseout");
+	//click to toggle the blue class
+	$seat.click(function(){
+		$(this).toggleClass("blue");
+		//$(this).unbind("onmouseover").unbind("onmouseout");
 
-	// });
+	});
 
 
 
