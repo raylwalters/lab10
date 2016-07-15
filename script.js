@@ -27,9 +27,6 @@ $(".button").on('click',function() {
 
 
 
-// $(".button").on('click', function(){
-// 	$(this).text("Reserved");
-// });
 
 //******Check that fields are filled in to submit******
 $("button").click(function(){
