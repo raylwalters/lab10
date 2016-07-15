@@ -2,40 +2,51 @@ $(function(){
 
 	$(".form-group").hide().filter("#seat").show();
 
-	//hover to fade button
-	var $seat = $("button.button");
-	$seat.mouseenter(function(){
-		$(this).fadeTo("fast", 0.5);
-	});
-	$seat.mouseleave (function(){
-		$(this).fadeTo("fast", 1);
-	});
+	// //hover to fade button
+	// var $seat = $("button.button");
+	// $seat.mouseenter(function(){
+	// 	$(this).fadeTo("fast", 0.5);
+	// });
+	// $seat.mouseleave (function(){
+	// 	$(this).fadeTo("fast", 1);
+	// });
 
 
 
-	//click to toggle the blue class
-	$seat.click(function(){
-		$(this).toggleClass("blue");
-		//$(this).unbind("onmouseover").unbind("onmouseout");
+	// //click to toggle the blue class
+	// $seat.click(function(){
+	// 	$(this).toggleClass("blue");
+	// 	//$(this).unbind("onmouseover").unbind("onmouseout");
 
-	});
+	// });
 
 
 
-//******Fills in form with seat number and removes when seat is unclicked******
+
+
 
 
 $(".button").on('click',function() {
   var text = $(this).text();
+
   $("#input").val(text);
 
+$('.button').click(function(){
+    $(this).fadeTo('fast', 0.5);
+});
+  
 	$("#name").show()
 	if (text === "reserved") {
 		$("#input").val("");
 	}
 
 
-});
+
+
+
+})
+
+
 
 //******Adds input once previous input is filled******
 
