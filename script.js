@@ -1,15 +1,15 @@
-
-
-
 $(function(){
 
 	//hover to fade button
 	var $seat = $("button.button");
-	$seat.hover(function(){
-		$(this).fadeTo("fast", .5);
-	},function(){
+	$seat.mouseenter(function(){
+		$(this).fadeTo("fast", 0.5);
+	});
+	$seat.mouseleave (function(){
 		$(this).fadeTo("fast", 1);
 	});
+
+
 
 	//click to toggle the blue class
 	$seat.click(function(){
@@ -19,9 +19,14 @@ $(function(){
 	});
 
 
+
 $(".button").on('click',function() {
   var text = $(this).text();
   $("#input").val(text);
+    $("#name").show();
+    if (text === "reserved") {
+        $("#input").val("");
+    }
 });
 
 
@@ -52,7 +57,7 @@ $("button").on("click", function() {
   } else {
     el.data("text-original", el.text());
     el.text(el.data("text-swap"));
-  }
+  } 
 });
 
 
@@ -74,4 +79,23 @@ $("button").on("click", function() {
 
 
 
+
+
 });
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
