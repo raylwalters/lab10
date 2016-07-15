@@ -53,16 +53,16 @@ $(".btn").click(function(){
 	if(!$name.val())
 		//&& !$email.val() && !$date.val() && !$allSeats.val()
 	{
-		console.log("nope");
+		$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 	}
 		else if(!$email.val()){
-			console.log("nope");
+			$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 		}
 			else if(!$date.val()){
-				console.log("nope");
+				$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 			}
 				else if(!$allSeats.val()){
-					console.log("nope");
+					$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 				}
 			
 		
