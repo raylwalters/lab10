@@ -1,4 +1,6 @@
 
+
+
 $(function(){
 	//hover
 	var $seat = $("div.col-md-3");
@@ -17,20 +19,17 @@ $(function(){
 
 	});
 
-$(".button").on('click',function() {
-  var text = $(this).text();
-  $("input").val(text);
+
+
+$("button").on("click", function() {
+  var el = $(this);
+  if (el.text() === el.data("text-swap")) {
+    el.text(el.data("text-original"));
+  } else {
+    el.data("text-original", el.text());
+    el.text(el.data("text-swap"));
+  }
 });
-
-
-
-$(".button").on('click', function(){
-	$(this).text("Reserved");
-})
-
-
-
-
 
 
 
@@ -52,11 +51,3 @@ $(".button").on('click', function(){
 
 
 });
-
-
-
-
-
-
-
-
