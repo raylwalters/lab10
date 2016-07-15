@@ -39,8 +39,16 @@ $(".button").on('click',function() {
 
 //******Adds input once previous input is filled******
 
-$("name").keypress(function() {
-  
+$( "#name" ).keypress(function() {
+  $("#email").show();
+});
+
+$( "#email" ).keypress(function() {
+  $("#date").show();
+});
+
+$( "#email" ).keypress(function() {
+  $("#submit").show();
 });
 
 
@@ -64,9 +72,9 @@ $(".btn").click(function(){
 				else if(!$allSeats.val()){
 					console.log("nope");
 				}
-			
-		
-		
+
+
+
 	else{
 		$name = $name.val();
 		$email = $email.val();
@@ -97,7 +105,7 @@ $("button").on("click", function() {
   } else {
     el.data("text-original", el.text());
     el.text(el.data("text-swap"));
-  } 
+  }
 });
 
 
@@ -122,20 +130,3 @@ $("button").on("click", function() {
 
 
 });
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
