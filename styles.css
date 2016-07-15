@@ -71,6 +71,26 @@ float: left;
 }
 
 
+.button {
+    background:url(images/black.png) no-repeat;
+    cursor:pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: #e83400;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.container{ 
+background-color:#e83400 ;}
+
+
+.button:active  /* use Dot here */
+{   
+    background:url(images/black.png) no-repeat;
+}
+    
 
 
 
