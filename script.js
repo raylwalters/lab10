@@ -1,4 +1,6 @@
 
+
+
 $(function(){
 
 	//hover to fade button
@@ -16,6 +18,7 @@ $(function(){
 
 	});
 
+
 $(".button").on('click',function() {
   var text = $(this).text();
   $("#input").val(text);
@@ -23,6 +26,7 @@ $(".button").on('click',function() {
 
 
 
+<<<<<<< HEAD
 // $(".button").on('click', function(){
 // 	$(this).text("Reserved");
 // });
@@ -40,9 +44,20 @@ $("button").click(function(){
 	}
 });
 
+=======
+>>>>>>> 35b534d157d0482ad391f1e4919f372270cb98e5
 
 
 
+$("button").on("click", function() {
+  var el = $(this);
+  if (el.text() === el.data("text-swap")) {
+    el.text(el.data("text-original"));
+  } else {
+    el.data("text-original", el.text());
+    el.text(el.data("text-swap"));
+  }
+});
 
 
 
@@ -64,11 +79,3 @@ $("button").click(function(){
 
 
 });
-
-
-
-
-
-
-
-
