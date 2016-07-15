@@ -29,15 +29,44 @@ $(".button").on('click',function() {
 
 
 //******Check that fields are filled in to submit******
-$("button").click(function(){
+$(".btn").click(function(){
 	var $name = $("input#enterName");
 	var $email = $("input#enterEmail");
 	var $date = $("input#selectDate");
 	var $allSeats = $("input#input");
-	if($name.text() === " " && $email.text() === " " && $date.text() === " " && $allSeats.text() === " "){
+	if(!$name.val())
+		//&& !$email.val() && !$date.val() && !$allSeats.val()
+	{
 		console.log("nope");
-	}else{
-		console.log("Booked");
+	}
+		else if(!$email.val()){
+			console.log("nope");
+		}
+			else if(!$date.val()){
+				console.log("nope");
+			}
+				else if(!$allSeats.val()){
+					console.log("nope");
+				}
+			
+		
+		
+	else{
+		$name = $name.val();
+		$email = $email.val();
+		$date = $date.val();
+		$allSeats = $allSeats.val();
+		console.log($name);
+		//$(".textbox").append("<li>" +$name + "</li>" + "<li>" + $email + "</li>" +"<li>" $date + "</li>" + $allSeats +"</li>");
+		$("ul.textbox").append('<li>' + $name + '</li>');
+		$("ul.textbox").append('<li>' + $email + '</li>');
+		$("ul.textbox").append('<li>' + $date + '</li>');
+		$("ul.textbox").append('<li>' + $allSeats + '</li>');
+
+		// $(".textbox").val($email);
+		// $(".textbox").val($date);
+		// $(".textbox").val($allSeats);
+
 	}
 });
 
