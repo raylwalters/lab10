@@ -1,11 +1,18 @@
+@import 'https://fonts.googleapis.com/css?family=Taviraj|Trirong|Ubuntu+Condensed';
+
+
+
 .row {
   height: 100px;
 }
 
 
-body{background-color: #e8b614;
+body{background-color: #48b5b3;
+    font-family:Trirong;
 }
 header {background-color: #e83400;
+        
+
 }
 nav{display: inline;}
  
@@ -14,6 +21,7 @@ nav{display: inline;}
         text-align: justify;
         padding: 10px;
         display: inline;
+        font-family: Tavira;
     }
     .navigation-menu-container {
 
@@ -31,6 +39,19 @@ nav{display: inline;}
 .blue{
 	background-color: #3f5373;
 }
-	
+	footer{background-color:#e83400; 
+        text-align: center;
+        font-family: Trirong;
+    }
+    
+    .lastparagraph{
+display: inline;
+width: 320px;
+padding: 10px;
+margin-left: 10px;
+
+    }
+iframe{margin-right:50px;}
+
 
 
