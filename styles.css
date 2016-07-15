@@ -44,14 +44,34 @@ nav{display: inline;}
         font-family: Trirong;
     }
     
-    .lastparagraph{
-display: inline;
-width: 320px;
-padding: 10px;
-margin-left: 10px;
+    .firstparagraph{
+float: left;
+        display: block;
+        margin: 15px 2% 0 2%;
+        width: 25%;
+        text-align: justify;
+        }
 
+    .lastparagraph{
+
+    float: right;
+        display: block;
+        margin: 15px 2% 0 2%;
+        width: 25%;
+        text-align: justify;
+        
     }
-iframe{margin-right:50px;}
+.video, iframe{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+    border: 10px #e8b614 solid;
+}
+
+
+
 
 
 
