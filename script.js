@@ -26,7 +26,7 @@ $(".button").on('click',function() {
 
 
 
-<<<<<<< HEAD
+
 // $(".button").on('click', function(){
 // 	$(this).text("Reserved");
 // });
@@ -44,8 +44,7 @@ $("button").click(function(){
 	}
 });
 
-=======
->>>>>>> 35b534d157d0482ad391f1e4919f372270cb98e5
+
 
 
 
