@@ -24,15 +24,27 @@ $(function(){
 
 //******Fills in form with seat number and removes when seat is unclicked******
 
+var arraySeats =[];
 
 $(".button").on('click',function() {
   var text = $(this).text();
-  $("#input").val(text);
 
-	$("#name").show()
-	if (text === "reserved") {
-		$("#input").val("");
-	}
+//Puts seats into an array and prints them in the input
+	if (text !== "reserved"){
+	arraySeats.push(text);
+	console.log(arraySeats);
+	arraySeats.forEach(function(each){
+		$("#input").val(arraySeats);
+	})
+} else {
+	arraySeats.filter(function(item){
+		return item !== this.text();
+		console.log(arraySeats);
+	});
+	console.log(arraySeats);
+	$("#input").val(arraySeats);
+}
+
 
 
 });
