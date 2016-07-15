@@ -1,15 +1,17 @@
-
-
-
 $(function(){
+
+	$(".form-group").hide().filter("#seat").show();
 
 	//hover to fade button
 	var $seat = $("button.button");
-	$seat.hover(function(){
-		$(this).fadeTo("fast", .5);
-	},function(){
+	$seat.mouseenter(function(){
+		$(this).fadeTo("fast", 0.5);
+	});
+	$seat.mouseleave (function(){
 		$(this).fadeTo("fast", 1);
 	});
+
+
 
 	//click to toggle the blue class
 	$seat.click(function(){
@@ -19,13 +21,32 @@ $(function(){
 	});
 
 
+<<<<<<< HEAD
+//******Fills in form with seat number and removes when seat is unclicked******
+=======
+>>>>>>> 6f6fd70c08b1402ff946fcd2bc8065e703514916
+
 $(".button").on('click',function() {
   var text = $(this).text();
   $("#input").val(text);
+<<<<<<< HEAD
+	$("#name").show()
+	if (text === "reserved") {
+		$("#input").val("");
+	}
+=======
+    $("#name").show();
+    if (text === "reserved") {
+        $("#input").val("");
+    }
+>>>>>>> 6f6fd70c08b1402ff946fcd2bc8065e703514916
 });
 
+//******Adds input once previous input is filled******
 
-
+$("name").keypress(function() {
+  
+});
 
 
 //******Check that fields are filled in to submit******
@@ -81,7 +102,7 @@ $("button").on("click", function() {
   } else {
     el.data("text-original", el.text());
     el.text(el.data("text-swap"));
-  }
+  } 
 });
 
 
@@ -103,4 +124,23 @@ $("button").on("click", function() {
 
 
 
+
+
 });
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
