@@ -22,11 +22,13 @@ $(function(){
 
 
 
-//******Fills in form with seat number and removes when seat is unclicked******
+
+
 
 
 $(".button").on('click',function() {
   var text = $(this).text();
+
   $("#input").val(text);
 
 	$("#name").show()
@@ -35,12 +37,25 @@ $(".button").on('click',function() {
 	}
 
 
-});
+
+
+
+})
+
+
 
 //******Adds input once previous input is filled******
 
-$("name").keypress(function() {
-  
+$( "#name" ).keypress(function() {
+  $("#email").show();
+});
+
+$( "#email" ).keypress(function() {
+  $("#date").show();
+});
+
+$( "#email" ).keypress(function() {
+  $("#submit").show();
 });
 
 
@@ -64,9 +79,9 @@ $(".btn").click(function(){
 				else if(!$allSeats.val()){
 					$("ul.textbox").append('<li>' + "Fill out all fields" + '</li>');
 				}
-			
-		
-		
+
+
+
 	else{
 		$name = $name.val();
 		$email = $email.val();
@@ -97,7 +112,7 @@ $("button").on("click", function() {
   } else {
     el.data("text-original", el.text());
     el.text(el.data("text-swap"));
-  } 
+  }
 });
 
 
@@ -122,20 +137,3 @@ $("button").on("click", function() {
 
 
 });
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
