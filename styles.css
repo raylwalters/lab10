@@ -1,19 +1,27 @@
-@import 'https://fonts.googleapis.com/css?family=Taviraj|Trirong|Ubuntu+Condensed';
+/*@import 'https://fonts.googleapis.com/css?family=Taviraj|Trirong|Ubuntu+Condensed';*/
 
 
 
 .row {
   height: 100px;
-  margin-left:10%;
+  margin-left:-4.5%;
   margin-bottom:5%;
+  text-align: center;
 
 }
 .well{
     margin-top:3%;
-}
+    width:60%;
+    margin:auto;
 
-body{background-color: #48b5b3;
-    font-family:Trirong;
+}
+/*.container{
+    text-align: center;
+  
+}*/
+
+body{  
+    font-family: 'Libre Franklin', sans-serif;
 }
 header {background-color: #e83400;
 }
@@ -36,18 +44,17 @@ nav{
         font-weight: normal;
         display: inline-block;
     }
-    h1 {width: 20%;
-    	display: inline;}
-
-
-
-.blue{
-	background-color: #3f5373;
+h1{
+    width: 20%;
+    display: inline;
 }
-	footer{background-color:#e83400; 
-        text-align: center;
-        font-family: Trirong;
-    }
+
+
+footer{
+    background-color:#e83400; 
+    text-align: center;
+    font-family: Trirong;
+}
     
 .firstparagraph{
         float: left;
@@ -66,33 +73,31 @@ nav{
         text-align: justify;
         
     }
-.video, iframe{
-    width: 100px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #777;
-    display: block;
-    border: 10px #e8b614 solid;
-}
 
 
 .button {
     background:url(images/black2.jpg) no-repeat;
-    background-size: 100px;
+    background-size: 100%;
     cursor:pointer;
     width: 100px;
     height: 100px;
     border: none;
     color: #e83400;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     margin-bottom:5px;
     text-align:center;
+    font-family: 'Libre Franklin', sans-serif; 
+    color:silver;
 }
 
-.container{ 
-    background-color:#e83400;
-    margin:2% 2%;
 }
+
+.col-md-2{
+    text-align: center;
+    display:inline-block;
+}
+
+
 
 
 .button:active  /* use Dot here */
@@ -102,6 +107,19 @@ nav{
 
 #res h3{
     margin-top:0;
+}
+.navbar-header{
+    width:100%;
+    margin:auto;
+    text-align:center;
+
+}
+a.navbar-brand{
+    font-size: 4em;
+}
+.container-fluid{
+    text-align:center;
+    margin-left:35%;
 }
 
 footer{
